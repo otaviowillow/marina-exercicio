@@ -45,11 +45,18 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+img {
+  width: 100%;
+}
 
 /* General */
 
-h2, h3, a, p, span {
+h2, h3, h4, a, p, label, input {
+  display: inline-block;
   font-family: 'Jost', sans-serif;
+}
+
+h2, h3 {
   font-weight: 700;
   
 }
@@ -73,15 +80,21 @@ h3 {
   margin: 25px 0px 25px 0px;
 }
 
+h4 {
+  font-size: 20px;
+  padding: 5px 0;
+}
+
 a {
   text-decoration: none;
   color: #6c6c6c
 }
 
-span {
-  font-size: 18px;
-  color: #6c6c6c;
-  font-weight: 500;
+input, textarea {
+  width: 100%;
+  border: 2px solid orange;
+  border-radius: 5px;
+  padding: 20px 15px;
 }
 
 .wrapper {
@@ -114,6 +127,10 @@ span {
 
 .accent-color-text {
   color: #ff95b7;
+}
+
+.white-color-text {
+  color: white;
 }
 
 .button {
@@ -150,7 +167,35 @@ span {
   align-items: center;
 }
 
+/*  social media */
+
+.social-media ul {
+  display: flex;
+  width: 100%;
+}
+
+.social-media li img {
+  width: 100%;
+}
+
+/* footer */
+
+.footer .internal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.footer .internal li {
+  display: inline-block;
+}
+
 /* Home - Hero */
+
+.hero {
+  padding: 30px 0 0 0;
+}
 
 .hero .internal {
   display: flex;
@@ -189,7 +234,7 @@ span {
   
 /* Home - social media */
 
-.social-media ul {
+.contact .internal {
   display: flex;
   width: 60%;
   justify-content: space-between;
@@ -203,7 +248,6 @@ span {
   margin: 0 25px 0 0px;
 }
 
-
 /* Home - footer */
 
 .footer .internal {
@@ -213,9 +257,51 @@ span {
   padding: 15px 0;
 }
 
-.footer .internal li {
+.contact .internal label {
   display: inline-block;
-
-  
 }
 
+.span {
+  font-size: 20px;
+  color: #6c6c6c;
+  font-weight: 500;
+}
+
+/* Flavors */
+
+.flavors .internal li {
+  display: flex;
+  align-items: center;
+  margin: 70px 0 0 0;
+}
+
+.flavors .internal img {
+  width: 150px;
+  margin-right: 50px;
+}
+
+/* About */
+
+.about-section h3, 
+.about-section p {
+  width: 100%;
+}
+
+.about-section ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.our-store {
+  background: url('./img/shop.jpg') center top no-repeat;
+  height: 500px;
+  padding: 0;
+  margin: 0;
+}
+
+.our-store h2 {
+  margin: 30px 0 0 0;
+}
