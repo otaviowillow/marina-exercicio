@@ -48,21 +48,29 @@ table {
 
 /* General */
 
-h2, h3, a, p {
+h2, h3, a, p, span {
   font-family: 'Jost', sans-serif;
   font-weight: 700;
+  
 }
 
 p {
   font-weight: 300;
+  justify-content: space-between;
+  line-height: 1.5rem;
+  padding: 0px 80px 15px 0px;
 }
 
 h2 {
   font-size: 70px;
+  line-height: 84px;
 }
 
 h3 {
   font-size: 40px;
+  line-height: 48px;
+  color: #6c6c6c;
+  margin: 25px 0px 25px 0px;
 }
 
 a {
@@ -79,7 +87,6 @@ a {
   width: 90%;
   padding: 0 5%;
   max-width: 1920px;
-  border: 1px solid red;
   margin: auto;
 }
 
@@ -114,18 +121,17 @@ a {
 /* Header */
 
 .header {
-  padding: 0;
+  padding: 10;
 }
 
 .header img {
-  width: 200px;
+  width: 150px;
 }
 
 .header li {
   display: inline-block;
-  margin: 0 15px;
-  border: 1px solid red;
-}
+  margin: 0 25px;
+ }
 
 .header a {
   color: #6c6c6c;
@@ -143,6 +149,7 @@ a {
 .hero .internal {
   display: flex;
   justify-content: space-between;
+  
 }
 
 .hero .internal aside {
@@ -158,19 +165,37 @@ a {
 }
 
 .hero .internal img {
-  width: 100%;
+  width: 60%;
 }
 
+/* Home - about */
+
+.about .internal {
+  display: flex;
+  align-items: flex-start;
+  width: 60%;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 25px 0px 25px 0px;
+
+}
+  
 /* Home - social media */
 
 .social-media ul {
   display: flex;
-  width: 100%;
+  width: 60%;
+  justify-content: space-between;
+  margin: 25px 0px 0px 0px;
+
 }
 
 .social-media li img {
-  width: 100%;
+  width: 90%;
+  justify-content: space-between;
+  margin: 0 25px 0 0px;
 }
+
 
 /* Home - footer */
 
@@ -178,9 +203,17 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0;
+  padding: 0px 0;
 }
 
 .footer .internal li {
   display: inline-block;
+  
+}
+
+.span {
+  font-size: 20px;
+  color: #6c6c6c;
+  font-weight: 500;
+ 
 }
