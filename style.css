@@ -66,6 +66,7 @@ p {
   justify-content: space-between;
   line-height: 1.5rem;
   padding: 0px 80px 15px 0px;
+  color: #6c6c6c;
 }
 
 h2 {
@@ -83,6 +84,8 @@ h3 {
 h4 {
   font-size: 20px;
   padding: 5px 0;
+  text-align: center;
+  color: #6c6c6c
 }
 
 a {
@@ -92,9 +95,16 @@ a {
 
 input, textarea {
   width: 90%;
-  border: 2px solid orange;
-  border-radius: 5px;
+  border: 2px solid #FAAC82;
+  border-radius: 10px;
   padding: 20px 5%;
+}
+
+ #message {
+  width: 90%;
+  border: 2px solid #FAAC82;
+  border-radius: 10px;
+  padding: 50px 5%;
 }
 
 .wrapper {
@@ -136,7 +146,6 @@ input, textarea {
 .button {
   display: inline-block;
   background: #8efab9;
-  color: darkgreen;
   padding: 15px 30px;
   border-radius: 10px;
   font-size: 20px;
@@ -239,10 +248,10 @@ input, textarea {
 .about .internal {
   display: flex;
   align-items: flex-start;
-  width: 60%;
+  width: 70%;
   justify-content: space-between;
   flex-direction: column;
-  margin: 25px 0px 25px 0px;
+  margin: 25px 25px 25px 0px;
 
 }
 
@@ -260,7 +269,7 @@ input, textarea {
 .flavors .internal li {
   display: flex;
   align-items: center;
-  margin: 70px 0 0 0;
+  margin: 70px 400px 0 0;
 }
 
 .flavors .internal img {
@@ -272,16 +281,22 @@ input, textarea {
 
 .about-section h3, 
 .about-section p {
-  width: 100%;
+  width: 70%;
+
 }
 
 .about-section ul {
   display: flex;
-  width: 100%;
+  width: 80%;
   justify-content: space-between;
   align-items: center;
-  margin: 0 20px;
 }
+
+.about-section li {
+  display: inline-block;
+  margin: 0 30px;
+ }
+ 
 
 .our-store {
   background: url('./img/shop.jpg') center top no-repeat;
@@ -303,7 +318,7 @@ input, textarea {
 .contact .internal label {
   display: inline-block;
   width: 100%;
-  font-size: 25px;
+  font-size: 20px;
   padding: 15px 0 10px 0;
 }
 
@@ -320,4 +335,6 @@ input, textarea {
 .contact .internal button {
   float: right;
   margin: 20px 0 0 0;
+  
 }
+
