@@ -45,16 +45,23 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+img {
+  width: 100%;
+}
 
 /* General */
 
-h2, h3, a, p {
+h2, h3, a, p, label, input {
   font-family: 'Jost', sans-serif;
+}
+
+h2, h3 {
   font-weight: 700;
 }
 
 p {
   font-weight: 300;
+  margin: 5px 0;
 }
 
 h2 {
@@ -68,6 +75,13 @@ h3 {
 a {
   text-decoration: none;
   color: #6c6c6c
+}
+
+input, textarea {
+  width: 100%;
+  border: 2px solid orange;
+  border-radius: 5px;
+  padding: 20px 15px;
 }
 
 .wrapper {
@@ -138,6 +152,30 @@ a {
   align-items: center;
 }
 
+/*  social media */
+
+.social-media ul {
+  display: flex;
+  width: 100%;
+}
+
+.social-media li img {
+  width: 100%;
+}
+
+/* footer */
+
+.footer .internal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.footer .internal li {
+  display: inline-block;
+}
+
 /* Home - Hero */
 
 .hero .internal {
@@ -161,26 +199,23 @@ a {
   width: 100%;
 }
 
-/* Home - social media */
+/* Contact */
 
-.social-media ul {
-  display: flex;
-  width: 100%;
-}
-
-.social-media li img {
-  width: 100%;
-}
-
-/* Home - footer */
-
-.footer .internal {
+.contact .internal {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 10px 0;
 }
 
-.footer .internal li {
+.contact .internal .map {
+  padding-right: 150px;
+}
+
+.contact .internal .map img {
+  width: 800px;
+}
+
+.contact .internal label {
   display: inline-block;
+  font-size: 25px;
+  margin: 20px 0 10px 0;
 }
