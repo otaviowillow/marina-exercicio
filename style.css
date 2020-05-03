@@ -78,6 +78,12 @@ a {
   color: #6c6c6c
 }
 
+span {
+  font-size: 18px;
+  color: #6c6c6c;
+  font-weight: 500;
+}
+
 .wrapper {
   width: 100%;
   padding: 30px 0;
@@ -166,6 +172,7 @@ a {
 
 .hero .internal img {
   width: 60%;
+
 }
 
 /* Home - about */
@@ -203,17 +210,12 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 0;
+  padding: 15px 0;
 }
 
 .footer .internal li {
   display: inline-block;
+
   
 }
 
-.span {
-  font-size: 20px;
-  color: #6c6c6c;
-  font-weight: 500;
- 
-}
